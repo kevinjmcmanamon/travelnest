@@ -1,2 +1,2 @@
-# travelnest
+# TravelNest
 Travelnest - Homework exercise
