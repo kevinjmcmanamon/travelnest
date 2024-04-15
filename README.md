@@ -26,3 +26,6 @@ module.
 Fortunately, any refactoring of that component will not affect any other parts
 of the code.
 - Currently the parser just returns a plain dictionary.  This could perhaps be updated to use a more formal data stucture, such as a dataclass.
+- The integration test is likely to be flaky in its current form, given that it checks for the exact list of current amenities, etc.
+So if the owner adds/removes an amenity, these tests would suddenly start failing.  Instead, these tests could be updated to merely check that _some_ data
+is being successfully scraped for each attribute, rather than checking the specific content being scraped.
